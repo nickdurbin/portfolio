@@ -1,0 +1,227 @@
+<html>
+	<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<link
+		rel="stylesheet"
+		href="prism-atom-dark.css"
+		type="text/css"
+		media="screen"
+	/>
+	
+	<script type="text/javascript" src="prism.js"></script>
+	<script type="text/javascript" src="prism.ruby.js"></script>
+	
+	<title>Nicholas Durbin</title>
+	<meta name="description" content="Nicholas Durbin is a professional software engineer specializing in full-stack development. He has extensive experience with Rails, Ruby, Javascript, HTML, LESS, Python, Django, Node.js, jQuery, SQL and building web applications.">
+	</head>
+	
+	<body>
+		<div class="about-container">
+			
+			<ul>
+				<li><a href="#" class="nav-link">ABOUT</a></li>
+				<li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+				<li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+				<li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+				<li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+			</ul>
+
+			<div class="about">
+			
+				<img src="me.jpg" class="me" />
+			
+				<h1>Nicholas Durbin</h1>
+				
+				<h2>FULL-STACK WEB DEVELOPER</h2>
+
+				<hr class="grey"/>
+				<p class="bio">
+					Nicholas Durbin is a full-stack web developer that graduated from Lambda School of programming. He has years of experience working with an automation company called Applied Vision that specializes in product imaging. Also, he uses blogginginmy30s.com to keep track of new and exciting endeavors, and express his thoughts on various topics about programming and psychology.
+				</p>
+			</div>
+		</div>
+		<h3 id="code-samples">Code Snippets</h3>
+		<hr class="style18">
+		
+		<div class="box">
+			<h4>Temperature Conversion</h4>
+			<p>
+				This Ruby program will prompt the user for a temperature in degrees Celcius and let the user know what the corresponding temperature is in Fahrenheit.
+			</p>
+		</div>
+		
+		<div class="box">
+<pre><code class="language-ruby">def celsius_to_fahrenheit(celsius)
+    return (celsius * 1.8) + 32
+end
+
+puts &quot;Please enter the temperature in Celsius:&quot;
+celsius = gets.to_f
+
+puts &quot;The temperature is #{celsius_to_fahrenheit(celsius)} degrees Fahrenheit&quot;</code></pre>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="box">
+<pre><code class="language-ruby">def ordinal(n)
+  
+  value = n % 10
+  
+  if n % 100 == 11 || n % 100 == 12 || n % 100 == 13
+    puts "This is the #{n}th entry"
+  elsif value == 1
+    puts "This is the #{n}st entry"
+  elsif value == 2
+    puts "This is the #{n}nd entry"
+  elsif value == 3
+    puts "This is the #{n}rd entry"
+  else
+    puts "This is the #{n}th entry"
+  end  
+end
+
+puts "Hello, please enter a number in the space below"
+n = gets.to_i
+
+ordinal(n)</code></pre>
+		</div>
+		
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+			<p>
+				This Ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters 2, it will display 2nd, if the user enters 3, then it will display 3rd.
+			</p>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="box">
+			<h4>Foobar</h4>
+			<p>
+				This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+		</div>
+		
+		<div class="box">
+<pre><code class="language-ruby">def foobar(num)
+  foobar_array = [*1..num]
+  
+  foobar_array.each do |num|
+    if num % 3 == 0 &amp;&amp; num % 5 == 0
+      puts &quot;foobar&quot;
+    elsif num % 3 == 0
+      puts &quot;foo&quot;
+    elsif num % 5 == 0
+      puts &quot;bar&quot;
+    else
+      puts &quot;#{num}&quot;
+    end
+  end
+end
+
+puts &quot;How many iterations would you like to see?&quot;
+num = gets.to_i
+
+foobar(num)</code></pre>
+		</div>
+		
+		<br class="clear" />
+		
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="style18" />
+		
+		<div class="box">
+			<h4>Quote Generator</h4>
+			<img src="splurty.png" class="full-width" /img>
+			<p>
+				A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Use Git and GitHub for version control, and launched on Heroku.
+			</p>
+		</div>
+		
+		<div class="box">
+			<h4>Yelp Clone</h4>
+			<img src="nomster.png" class="full-width" />
+			<p>
+				A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings,
+				image uploading, and user authentication.
+			</p>
+		</div>
+		<br class="clear" />
+
+		<div class="box">
+			  <h4>Two-Sided Market Place</h4>
+			  <img src="flixter.png" class="full-width" />
+			  <p>
+				A two-sided, video-streaming marketplace platform that
+				features credit card payment capabilities, user role
+				management, complex user interfaces, and advanced
+				database relationships.
+			  </p>
+		</div>
+			
+		<div class="box">
+			  <h4>Test Driven Development</h4>
+			  <img src="grammable.png" class="full-width" />
+			  <p>
+				An Instagram clone that was built using industry-standard, test-driven
+				development following numerous red/green/refactor cycles.
+			  </p>
+		</div>
+			
+		<br class="clear" />
+			
+		<div class="box">
+			  <h4>Single Page Todo Application</h4>
+			  <img src="todoster.png" class="full-width" />
+			  <p>
+				This single-page to-do application features a
+				fluid user interface that– by using JavaScript–
+				allows users to rapidly add dynamic content.
+			  </p>
+		</div>
+			
+		<div class="box">
+			  <h4>Agile Team Project</h4>
+			  <img src="chess.png" class="full-width" />
+			  <p>
+				Worked on an Agile software development team building a chess application. Under the guidance of a senior software engineer,
+				we had weekly Agile team meetings for code reviews, sprint planning,
+				and feature assignments.
+			  </p>
+		</div>
+		<br class="clear" />
+		<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+		<hr class="style18" />
+		<p class="skills-and-tools">
+			Nicholas has developed proficiency and expertise in the following programming languages and comfort with the following tools.
+		</p>
+		<div class="icons">
+			<img src="github.png" class="icon" />
+			<img src="rubocop.png" class="icon" />
+			<img src="trello.png" class="icon" />
+			<img src="slack.png" class="icon" />
+			<img src="codeship.png" class="icon" />
+		
+			<br class="clear" />
+			<img src="skills.png" />
+		</div>
+		
+		<div class="contact-me" id="hire-me">
+			<h3 class="contact-headline">Contact</h3>
+			<hr class="style18" />
+			<p class="contact-info">
+				Currently entertaining new opportunities. Please get in touch via email:
+			</p>
+			
+			<p>
+				<a href="mailto:nick.durbin@gmail.com" class="contact-link">nick.durbin@gmail.com</a>
+			</p>
+		</div>
+	</body>
+	
+</html>
